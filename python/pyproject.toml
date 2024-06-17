@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dsa"
+version = "0.1.0"
+description = ""
+authors = ["Tobechukwu Onyema <tobe.onyema@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[tool.poetry.scripts]
+run-tests = "pytest:main"
+dsa = "dsa.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
